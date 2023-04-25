@@ -74,7 +74,7 @@ for(const eachElement of superheroes) {
     console.log("La ciudad es " + eachElement.ciudad)
 }
 
-//forEcha ()-> bucle especificamente para arrays. El forEach va a recorrer cada elemento y lo va a menter en cadaSuperheore
+//forEach ()-> bucle especificamente para arrays. El forEach va a recorrer cada elemento y lo va a menter en cadaSuperheore
 // Es otra estructura iterativa que te permite recorrer un array. 
 superheroes.forEach(function(cadaSuperheroe){
     console.log(cadaSuperheroe.name, cadaSuperheroe.ciudad)

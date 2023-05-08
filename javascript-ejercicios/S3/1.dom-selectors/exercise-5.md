@@ -17,3 +17,6 @@ Dado el siguiente html usa querySelector para mostrar por consola todos los elem
 </body>
 </html>
 ```
+const elements = document.querySelectorAll('[data-function="testMe"]');
+console.log(elements);
+

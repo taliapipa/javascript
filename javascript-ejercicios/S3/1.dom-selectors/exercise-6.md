@@ -17,3 +17,6 @@ Dado el siguiente html usa querySelector para mostrar por consola el 3 personaje
 </body>
 </html>
 ```
+
+const element = document.querySelector('span[data-function="testMe"]:nth-of-type(3)');
+console.log(element);

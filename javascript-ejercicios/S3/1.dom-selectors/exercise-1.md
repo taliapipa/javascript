@@ -14,3 +14,7 @@ Dado el siguiente html usa querySelector para mostrar por consola el botón con 
 </body>
 </html>
 ```
+
+const btn = document.querySelector(".showme");
+
+console.log(btn);

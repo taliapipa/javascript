@@ -17,3 +17,5 @@ Dado el siguiente html usa querySelector para mostrar por consola todos los p
 </body>
 </html>
 ```
+const paragraph = document.querySelector("p");
+console.log(paragraph)

@@ -18,6 +18,51 @@ let sectionElement = document.querySelector(".list")
 const drinkSearch = document.querySelector(".drinkSearch")
 const drinkBtnSearch = document.querySelector(".drinkBtnSearch")
 
+// FUNCION EVENTO SUMA
+
+const hadlerSuma = (ev) => {
+    console.log(ev.target.parentNode.id);
+    //añadir el array de las cestas
+    //randerizar el html
+    const idDrink = ev.target.parentNode.id;
+    const findElement = cesta.find((e) => e.id === idDrink);
+    console.log(findElement)
+
+    if (!findElement) {
+        cesta.push(findElemento);
+
+    } else{
+        cesta(findElemento).cantidad +- 1;
+    }
+    //compra cesta=[] -> render
+    renderCesta();
+}
+
+
+const hadlerResta = (ev) => {
+    const id = ev.target.parentNode.id;
+    const positionelement = cesta.findIndex((e) => e.id === id);
+    if (positionelement !== -1) {
+        if(cesta[positionElement].cantidad === 0){
+            cesta.splice(positionElement, 1);
+        }else {
+            cesta[positionElement].cantidad -= 1;
+        }
+        renderCesta();
+    }
+
+}
+
+function renderCesta() {
+    cestaHTML.innerHTML = "";
+    for (const element of cesta) {
+        cestaHTML.innerHTML += <li>Bebida: ${element.name}, Cantidad: ${element.cantidad}</li>;
+    }
+}
+
+
+
+
 
 //SEARCH
 

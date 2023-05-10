@@ -19,3 +19,9 @@ Basandote en el siguiente html, elimina todos los nodos que tengan la clase .fn-
    <p>No me elimines!</p>
 </body>
 </html>```
+
+const removeMe = document.querySelectorAll(".fn-remove-me");
+
+for(let i = 0; i < removeMe.length; i++){
+    removeMe[i].remove()
+};

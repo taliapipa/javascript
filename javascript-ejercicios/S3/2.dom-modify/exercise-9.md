@@ -15,3 +15,12 @@ Basandote en el siguiente html y javascript,inserta p con el texto 'Voy dentro!'
    <div>Aqui no va un p</div>
 </body>
 </html>```
+
+
+const div = document.querySelectorAll(".fn-insert-here");
+
+for (i = 0; i < div.length; i++) {
+const paragraph = document.createElement("p");
+paragrapgh.textContent = "Voy dentro!";
+    div[i].appendChild(paragraph);
+};

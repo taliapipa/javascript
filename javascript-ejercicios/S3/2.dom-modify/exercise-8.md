@@ -13,3 +13,9 @@ Basandote en el siguiente html,inserta una p con el texto 'Voy en medio!' entre 
    <div></div>
 </body>
 </html>```
+
+const paragraph = document.createElement("p");
+paragrapgh.textContent = "Voy en medio!";
+
+const firstDiv = document.querySelector("div:first-of-type");
+firstDiv.insertAdjacentElement("afterend", paragraph);

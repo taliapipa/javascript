@@ -16,3 +16,7 @@ Basandote en el html siguiente, elimina el elemento que tenga la clase .fn-remov
 
 </html>
 ```
+
+const removeMe = document.querySelector(".fn-remove-me");
+    removeMe.remove()
+

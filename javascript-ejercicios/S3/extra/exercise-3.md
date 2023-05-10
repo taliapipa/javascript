@@ -18,3 +18,12 @@ Dado el siguiente html y javascript. Utiliza el array para crear dinamicamente u
 ```js
 const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola'];
 ```
+const div = document.querySelector('[data-function="printHere"]')
+const ul = document.createElement("ul");
+document.body.div.appendchild(ul);
+
+for(const car of cars){
+    const li = document.createElement("li");
+    ul.appendchild(li)
+    li.textContent = car;
+}

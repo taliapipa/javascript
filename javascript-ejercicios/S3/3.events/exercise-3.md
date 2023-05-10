@@ -13,3 +13,8 @@ Basandote en el siguiente html, añade un evento 'input' que ejecute un console.
 </body>
 </html>
 ```
+const input = document.querySelector("input");
+
+input.addEventListener("focus", function(ev){
+  console.log("Valor del input: ", ev.target.value);
+});
